@@ -13,7 +13,6 @@ dllib.dlsym.restype = ctypes.c_void_p
 
 class LibHandle:
   def __init__(self,handle):
-    print hex(handle)
     self.handle = ctypes.c_void_p(handle)
   def sym(self,name):
     return dllib.dlsym(self.handle,name)
