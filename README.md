@@ -6,4 +6,5 @@ This module provides an implementation of the dl module using ctypes (it simply 
 and calls dlopen and dlsym.) It can be used thusly:
 
 import dlctypes
+
 dl = dlctypes
